@@ -1,12 +1,27 @@
 /* General Styles */
 :root {
-  --primary-color: #7d7d7d;
+  --primary-color: #343a40;
   --secondary-color: white;
-  --text-color: #8f8f8f;
+  --text-color: #6c757d;
+  --highlight-color: #ffc107;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--highlight-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--highlight-color);
+  text-decoration: underline;
 }
 
 /* Title Section */
@@ -16,7 +31,7 @@ body {
 
 .glocks {
   font-size: 2rem;
-  font-family: "Montserrat-Medium Italic", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: var(--secondary-color);
   text-align: center;
 }
@@ -29,42 +44,22 @@ body {
   padding: 3% 8% 4%;
 }
 
-.wiki {
-  color: var(--secondary-color);
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-/* Typography */
-h1 {
-  font-family: "Montserrat-Black", sans-serif;
-  font-size: 3rem;
-  line-height: 1.5;
-  color: var(--secondary-color);
-  font-weight: bold;
-}
-
-h2 {
-  font-family: "Montserrat-Bold", sans-serif;
-  font-size: 3rem;
-  line-height: 1.5;
-}
-
-h3 {
-  font-family: "Montserrat-Bold", sans-serif;
-  font-weight: bold;
-}
-
-p {
-  color: var(--text-color);
-}
-
 .titimg {
   margin-top: 15%;
   width: 80%;
   transform: rotate(35deg);
   position: absolute;
   right: 10%;
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+p {
+  color: var(--text-color);
 }
 
 /* Navbar */
@@ -78,7 +73,7 @@ p {
 
 .nav-link {
   font-size: 1.2rem;
-  font-family: "Montserrat-Light", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .navbar-brand {
@@ -88,20 +83,18 @@ p {
 }
 
 /* Button Styles */
-.more-info {
-  margin-top: 2%;
-  text-decoration: none;
+.btn-lg {
+  font-size: 1rem;
 }
 
-a:hover {
-  color: var(--primary-color);
+.more-info {
+  margin-top: 2%;
   text-decoration: none;
 }
 
 /* Features Section */
 #features {
   padding: 3% 8%;
-  background-color: var(--secondary-color);
 }
 
 .feature-box {
@@ -111,23 +104,18 @@ a:hover {
 
 .icon {
   margin-bottom: 1rem;
-}
-
-.icon:hover {
-  color: var(--primary-color);
+  color: var(--highlight-color);
 }
 
 /* Testimonials Section */
 #testimonials {
-  text-align: center;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+  padding: 3% 8%;
 }
 
 .test-glo-img {
-  border-radius: 30%;
+  border-radius: 50%;
   margin: 20px;
-  width: 300px;
+  width: 200px;
 }
 
 .carousel-item {
@@ -136,7 +124,6 @@ a:hover {
 
 /* Press Section */
 #press {
-  background-color: var(--primary-color);
   text-align: center;
   padding-bottom: 3%;
 }
@@ -149,7 +136,6 @@ a:hover {
 /* Bullets Section */
 #bullets {
   padding: 100px;
-  text-align: center;
 }
 
 .bullets-col {
@@ -162,12 +148,10 @@ a:hover {
 
 /* Footer */
 #footer {
-  background-color: var(--primary-color);
   padding: 3% 8%;
 }
 
 .foot {
-  color: var(--secondary-color);
   text-align: center;
 }
 
@@ -180,5 +164,15 @@ a:hover {
   .titimg {
     position: static;
     transform: rotate(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 2rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
   }
 }

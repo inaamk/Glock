@@ -1,169 +1,183 @@
-#title{
-  background-color: #7d7d7d;
+/* General Styles */
+:root {
+  --primary-color: #7d7d7d;
+  --secondary-color: white;
+  --text-color: #8f8f8f;
 }
-.Glocks{
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Title Section */
+#title {
+  background-color: var(--primary-color);
+}
+
+.Glocks {
   font-size: 2rem;
-  font-family: "Montserrat-Medium Italic",sans-serif;
-  color: white;
+  font-family: "Montserrat-Medium Italic", sans-serif;
+  color: var(--secondary-color);
   text-align: center;
 }
-.Glocks1{
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
+
+.Glocks1 {
   transform: scaleX(-1);
 }
 
-.container-fluid{
+.container-fluid {
   padding: 3% 8% 4%;
 }
 
-.wiki{
-  color: white;
+.wiki {
+  color: var(--secondary-color);
   text-decoration: none;
   text-transform: uppercase;
 }
 
-body{
-  font-family: "Montserrat", sans-serif;
-}
-
-h1{
+/* Typography */
+h1 {
   font-family: "Montserrat-Black", sans-serif;
   font-size: 3rem;
   line-height: 1.5;
-  color: white;
+  color: var(--secondary-color);
   font-weight: bold;
 }
-h2{
-  font-family: "Montserrat-Bold",sans-serif;
+
+h2 {
+  font-family: "Montserrat-Bold", sans-serif;
   font-size: 3rem;
   line-height: 1.5;
 }
-h3{
-  font-family: "Montserrat-Bold",sans-serif;
+
+h3 {
+  font-family: "Montserrat-Bold", sans-serif;
   font-weight: bold;
 }
-p{
-  color: #8f8f8f;
+
+p {
+  color: var(--text-color);
 }
-.titimg{
-  margin-top:  15%;
+
+.titimg {
+  margin-top: 15%;
   width: 80%;
   transform: rotate(35deg);
-  position:absolute;
+  position: absolute;
   right: 10%;
-
 }
 
-/* nav bar */
-.navbar{
+/* Navbar */
+.navbar {
   padding: 0 0 2.5rem;
 }
 
-.nav-item{
+.nav-item {
   padding: 0 18px;
 }
 
-.nav-link{
+.nav-link {
   font-size: 1.2rem;
   font-family: "Montserrat-Light", sans-serif;
 }
 
-.navbar-brand{
+.navbar-brand {
   font-family: "Ubuntu";
   font-size: 2.5rem;
   font-weight: bold;
-
 }
 
-
-/* moreinfo btn */
-.More-info{
+/* Button Styles */
+.More-info {
   margin-top: 2%;
   text-decoration: none;
 }
+
 a:hover {
-  color: #7d7d7d;
+  color: var(--primary-color);
   text-decoration: none;
 }
 
-/* feature */
-#features{
+/* Features Section */
+#features {
   padding: 3% 8%;
-  background-color: #fff;
-  position: relative;
+  background-color: var(--secondary-color);
 }
 
-.feature-box{
+.feature-box {
   text-align: center;
   padding: 5%;
 }
-.icon{
+
+.icon {
   margin-bottom: 1rem;
 }
-.icon:hover{
-  color: #7d7d7d;
+
+.icon:hover {
+  color: var(--primary-color);
 }
 
-/* testimonials */
-#testimonials{
+/* Testimonials Section */
+#testimonials {
   text-align: center;
-  background-color: #7d7d7d;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
-.test-glo-img{
+.test-glo-img {
   border-radius: 30%;
   margin: 20px;
   width: 300px;
 }
 
-#press{
-  background-color: #7d7d7d;
-  text-align:center;
+.carousel-item {
+  padding: 3% 8%;
+}
+
+/* Press Section */
+#press {
+  background-color: var(--primary-color);
+  text-align: center;
   padding-bottom: 3%;
 }
 
-.press-logo{
+.press-logo {
   width: 10%;
   margin: 20px 20px 15px;
 }
 
-
-.carousel-item{
-  padding: 3% 8%;
-}
-/* Bullets */
-#Bullets{
+/* Bullets Section */
+#Bullets {
   padding: 100px;
   text-align: center;
 }
 
-.bullets-col{
+.bullets-col {
   padding: 3% 2%;
 }
-.bh2{
+
+.bh2 {
   font-size: 1.5rem;
 }
 
-/* footer */
-#footer{
-  background-color:  #7d7d7d;
+/* Footer */
+#footer {
+  background-color: var(--primary-color);
   padding: 3% 8%;
 }
-.foot{
-  color: #fff;
+
+.foot {
+  color: var(--secondary-color);
   text-align: center;
 }
 
-
-/* media */
-@media (max-width: 1028px){
-  #title{
+/* Responsive Styles */
+@media (max-width: 1028px) {
+  #title {
     text-align: center;
   }
-  .titimg{
+  
+  .titimg {
     position: static;
     transform: rotate(0);
   }

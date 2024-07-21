@@ -14,14 +14,14 @@ body {
   background-color: var(--primary-color);
 }
 
-.Glocks {
+.glocks {
   font-size: 2rem;
   font-family: "Montserrat-Medium Italic", sans-serif;
   color: var(--secondary-color);
   text-align: center;
 }
 
-.Glocks1 {
+.glocks1 {
   transform: scaleX(-1);
 }
 
@@ -88,7 +88,7 @@ p {
 }
 
 /* Button Styles */
-.More-info {
+.more-info {
   margin-top: 2%;
   text-decoration: none;
 }
@@ -147,7 +147,7 @@ a:hover {
 }
 
 /* Bullets Section */
-#Bullets {
+#bullets {
   padding: 100px;
   text-align: center;
 }

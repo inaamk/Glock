@@ -1,165 +1,169 @@
-body {
-  font-family: "Montserrat", sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-#title {
+#title{
   background-color: #7d7d7d;
-  color: white;
-  padding: 50px 0;
 }
-
-.Glocks {
+.Glocks{
   font-size: 2rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat-Medium Italic",sans-serif;
   color: white;
   text-align: center;
 }
-
-.Glocks1 {
+.Glocks1{
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
 
-.container-fluid {
-  padding: 3% 8%;
+.container-fluid{
+  padding: 3% 8% 4%;
 }
 
-.wiki {
+.wiki{
   color: white;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-h1 {
+body{
+  font-family: "Montserrat", sans-serif;
+}
+
+h1{
+  font-family: "Montserrat-Black", sans-serif;
   font-size: 3rem;
   line-height: 1.5;
-  font-weight: bold;
   color: white;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
   font-weight: bold;
 }
-
-p {
+h2{
+  font-family: "Montserrat-Bold",sans-serif;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+h3{
+  font-family: "Montserrat-Bold",sans-serif;
+  font-weight: bold;
+}
+p{
   color: #8f8f8f;
 }
-
-.titimg {
-  margin-top: 15%;
+.titimg{
+  margin-top:  15%;
   width: 80%;
   transform: rotate(35deg);
-  position: absolute;
+  position:absolute;
   right: 10%;
+
 }
 
-.navbar {
-  padding-bottom: 2.5rem;
+/* nav bar */
+.navbar{
+  padding: 0 0 2.5rem;
 }
 
-.nav-item {
+.nav-item{
   padding: 0 18px;
 }
 
-.nav-link {
+.nav-link{
   font-size: 1.2rem;
+  font-family: "Montserrat-Light", sans-serif;
 }
 
-.navbar-brand {
+.navbar-brand{
+  font-family: "Ubuntu";
   font-size: 2.5rem;
   font-weight: bold;
+
 }
 
-.More-info {
+
+/* moreinfo btn */
+.More-info{
   margin-top: 2%;
+  text-decoration: none;
 }
-
-.More-info a {
-  color: white;
+a:hover {
+  color: #7d7d7d;
   text-decoration: none;
 }
 
-.More-info a:hover {
-  color: #7d7d7d;
-}
-
-#features {
+/* feature */
+#features{
   padding: 3% 8%;
   background-color: #fff;
+  position: relative;
 }
 
-.feature-box {
+.feature-box{
   text-align: center;
   padding: 5%;
 }
-
-.icon {
+.icon{
   margin-bottom: 1rem;
 }
-
-.icon:hover {
+.icon:hover{
   color: #7d7d7d;
 }
 
-#testimonials {
+/* testimonials */
+#testimonials{
   text-align: center;
   background-color: #7d7d7d;
   color: white;
-  padding: 50px 0;
 }
 
-.test-glo-img {
+.test-glo-img{
   border-radius: 30%;
   margin: 20px;
   width: 300px;
 }
 
-#press {
+#press{
   background-color: #7d7d7d;
-  text-align: center;
-  padding: 3% 0;
+  text-align:center;
+  padding-bottom: 3%;
 }
 
-.press-logo {
+.press-logo{
   width: 10%;
   margin: 20px 20px 15px;
 }
 
-#Bullets {
+
+.carousel-item{
+  padding: 3% 8%;
+}
+/* Bullets */
+#Bullets{
   padding: 100px;
   text-align: center;
 }
 
-.bullets-col {
+.bullets-col{
   padding: 3% 2%;
 }
-
-.bh2 {
+.bh2{
   font-size: 1.5rem;
 }
 
-#footer {
-  background-color: #7d7d7d;
-  padding: 3% 0;
+/* footer */
+#footer{
+  background-color:  #7d7d7d;
+  padding: 3% 8%;
 }
-
-.foot {
+.foot{
   color: #fff;
   text-align: center;
 }
 
-@media (max-width: 1028px) {
-  #title {
+
+/* media */
+@media (max-width: 1028px){
+  #title{
     text-align: center;
   }
-
-  .titimg {
+  .titimg{
     position: static;
     transform: rotate(0);
   }
